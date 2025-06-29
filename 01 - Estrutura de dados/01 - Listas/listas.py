@@ -22,5 +22,32 @@ print(frutas[-1])
 print(frutas[-1])
 
 # Listas Aninhadas
-# Linhas podem arma
+# Linhas podem armazenar todos os tipos de objetos Python, portanto podemos ter listas que armazenam outras listas. Com isso podemos criar estruturas bidimensionais (tabelas), e acessar informando os índices de linha e coluna. 
+# É mais usado para representação de matriz. 
+# Bidimensional ou com mais dimensões
 
+matriz = [
+    [1, "a", 2],
+    ["b", 3, 4],
+    [6, 5, "c"]
+]
+print(matriz[0])
+print(matriz[1])
+print(matriz[1][2])
+print(matriz[-1][-3])
+print(matriz[-3])
+
+# Fatiamento 
+# Além de acessar elementos diretamente, podemos extrair um conjunto de valores de uma sequência. Para isso basta passar o índice inicial e/ou final para acessar o conjunto. Podemos ainda informar quantas posições o cursor deve "pular" no acesso. 
+
+lista = ["P", "y", "t", "h", "o", "n"]
+
+print(lista[0])
+print(lista[:4:2])
+print(lista[:5])
+print(lista[::])
+print(lista[0:3:2])
+print(lista[::-1])
+
+# Iterar listas
+# A forma mais comum para percorrer os dados de uma lista é utilizando o comando for. 

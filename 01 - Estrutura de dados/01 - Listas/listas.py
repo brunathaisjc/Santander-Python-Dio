@@ -51,3 +51,18 @@ print(lista[::-1])
 
 # Iterar listas
 # A forma mais comum para percorrer os dados de uma lista é utilizando o comando for. 
+
+carros = ["gol", "celta", "palio"]
+
+for carro in carros:
+    print(carro)
+
+
+# Função enumerate 
+
+# Às vezes é necessário saber qual é índice do objeto dentro do laço for. Para isso podemos usar a função enumarate. 
+
+carros = ["gol", "celta", "palio"]
+
+for indice, carro in enumerate(carros): # indice - é o contador; carro - é o item da iteração
+    print(f"{indice}: {carro}")
